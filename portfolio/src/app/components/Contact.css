@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .contact-section {
     text-align: center;
-  }
+}
 
 .contact-section h2 {
     font-size: 4.5rem;
@@ -8,11 +15,16 @@
     font-weight: bold;
 }
 
+.contact-section p {
+    text-align: center;
+    font-family: 'PlayfairDisplay', sans-serif;
+    padding-bottom: 1rem;
+}
+
 #contactform {
     max-width: 500px;
-    /* Limit the form width */
     margin: 0 auto;
-    /* Center the form horizontally */
+    font-family: 'PlayfairDisplay', sans-serif;
 }
 
 /* Style for form input fields */
@@ -22,14 +34,13 @@ textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    /* Add a border to input fields */
+    border: 1px solid #166252;
     border-radius: 4px;
 }
 
 /* Style for the submit button */
 input[type="submit"] {
-    background-color: #007bff;
+    background-color: #0b2922;
     /* Set the button background color */
     color: #fff;
     /* Set the button text color */
