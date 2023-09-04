@@ -1,6 +1,5 @@
-
 /* Style for the <nav> element */
-nav{
+nav {
     background-color: #333;
     padding: 1rem 0;
     text-align: center;
@@ -19,7 +18,6 @@ ul {
 /* Style for each list item (<li>) */
 li {
     margin: 0 1rem;
-
 }
 
 /* Style for the <a> element (the navigation links) */
@@ -27,11 +25,12 @@ a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
-
+    position: relative;
+    /* Add relative positioning to create a stacking context */
 
     /* Additional styles on hover */
     &:hover {
         color: #ccc;
-
     }
 }
+

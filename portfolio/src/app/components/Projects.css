@@ -1,0 +1,14 @@
+.projects-container {
+    display: flex;
+    margin: 0 5vw 0 5vw;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* For smooth scrolling on iOS devices */
+}
+
+.project-card {
+    min-width: 50%;
+    scroll-snap-align: start;
+
+}

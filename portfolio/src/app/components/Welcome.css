@@ -4,6 +4,7 @@
     flex-direction: row;
     /* Gets text centered */
     align-items: center;
+
     /* Stack items on small screens */
     @media (max-width: 768px) {
         flex-direction: column;
@@ -25,4 +26,3 @@ section .image-container {
     text-align: left;
 
 }
-
