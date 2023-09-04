@@ -1,4 +1,5 @@
 import React from 'react';
+import './page.css';
 // Importing all the sections 
 import Welcome from './components/Welcome';
 import AboutMe from './components/AboutMe';

@@ -1,0 +1,28 @@
+.welcome-section {
+    display: flex;
+    /* Display children side by side */
+    flex-direction: row;
+    /* Gets text centered */
+    align-items: center;
+    /* Stack items on small screens */
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+/* Style the image container */
+section .image-container {
+    flex: 1;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the paragraph */
+.welcome-section p {
+    flex: 1;
+    font-size:2rem;
+    text-align: center;
+
+}
+

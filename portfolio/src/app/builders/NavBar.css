@@ -1,0 +1,36 @@
+
+/* Style for the <nav> element */
+nav{
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Style for the <ul> element */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each list item (<li>) */
+li {
+    margin: 0 1rem;
+
+}
+
+/* Style for the <a> element (the navigation links) */
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+
+
+    /* Additional styles on hover */
+    &:hover {
+        color: #ccc;
+
+    }
+}
