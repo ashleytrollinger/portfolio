@@ -1,0 +1,16 @@
+.about-section h2 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-section {
+    align-items: center;
+    margin: 0 5vw 0  5vw;
+}

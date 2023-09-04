@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './AboutMe.css';
 export default function AboutMe() {
     return (
-        <section>
+        <section className="about-section">
             <h2>About Me</h2>
             <p>
                 Hello, my name is Ashley Trollinger, a passionate and dedicated software developer in the making.  My journey in software development began with a 6-month full-stack web development bootcamp at George Washington College, where I discovered my love for creating new and innovative app ideas.

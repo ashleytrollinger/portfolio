@@ -1,0 +1,17 @@
+/* Style for the footer container */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+/* Style for the image elements */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+
+}

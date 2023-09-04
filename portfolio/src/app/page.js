@@ -6,8 +6,9 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-// Importing Nav
+// Importing Nav and Footer
 import NavBar from './builders/NavBar';
+import Footer from './builders/Footer';
 
 export default function Home() {
   // This handles the scroll of the page when user clicks on nav
@@ -35,6 +36,7 @@ export default function Home() {
         <section id='section'>
           <Contact />
         </section>
+        <Footer />
       </div>
     </main>
   )

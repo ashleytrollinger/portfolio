@@ -9,3 +9,10 @@ nav {
     top: 0;
     z-index: 100;
 }
+
+/* Make the footer sticky at the bottom */
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}

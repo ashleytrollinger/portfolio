@@ -21,8 +21,8 @@ section .image-container {
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size:2rem;
-    text-align: center;
+    font-size:3rem;
+    text-align: left;
 
 }
 
