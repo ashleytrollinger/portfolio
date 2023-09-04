@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'TitanOne';
-    src: url('./fonts/Titan_One/TitanOne-Regular.ttf') format('truetype');
+    font-family: 'DMSerifDisplay';
+    src: url('./fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,12 +8,15 @@
 /* Set the height of all sections to 100vh (viewport height) */
 section {
     height: 100vh;
-
+    background-color: #1F7361;
 }
 
 section h2 {
-    font-family: 'TitanOne';
+    font-family: 'DMSerifDisplay';
+    font-weight: 800;
+    color: #0B2922;
 }
+
 
 /* Make the navigation bar sticky at the top */
 nav {

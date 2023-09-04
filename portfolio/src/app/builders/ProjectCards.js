@@ -5,8 +5,8 @@ export default function ProjectCard({ title, description, imageUrl, liveLink, gi
 
     return (
         <div className="project-card">
-            <img src={imageUrl} alt={title} />
             <h3>{title}</h3>
+            <img src={imageUrl} alt={title} />
             <p>{description}</p>
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
                 Live Link

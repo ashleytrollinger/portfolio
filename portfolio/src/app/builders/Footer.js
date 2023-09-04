@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import './Footer.css';
 // Importing logos
-import github from "../images/github-mark.png";
+import github from "../images/githubmark.png";
 import instagram from "../images/instagram-icon.png";
 import linkedin from "../images/linkedin.png";
 export default function Footer() {

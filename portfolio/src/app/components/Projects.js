@@ -32,16 +32,18 @@ export default function Projects() {
             liveLink: '',
             githubLink: 'https://github.com/ashleytrollinger/Weather-Dashboard',
         },
-        
+
         // Repeat this structure for your other projects
     ];
     return (
-
+       <section className='projects'>
+        <h2>Projects</h2>
         <div className="projects-container">
-            <h2>Projects</h2>
+ 
             {projectsData.map((project, index) => (
                 <ProjectCard key={index} {...project} />
             ))}
         </div>
+        </section>
     )
 }

@@ -1,6 +1,7 @@
+
 .about-section h2 {
     font-weight: bold;
-    font-size: 3.2rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 
@@ -18,7 +19,7 @@
 /* Media query for medium-sized screens */
 @media screen and (max-width: 1024px) {
     .about-section h2 {
-        font-size: 2.5rem;
+
         /* Adjust font size for medium screens */
     }
 
