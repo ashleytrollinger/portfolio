@@ -1,0 +1,511 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/page.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Set the height of all sections to 100vh (viewport height) */
+section {
+    height: 100vh;
+    background-color: #1F7361;
+}
+
+section h2 {
+    font-family: 'DMSerifDisplay';
+    font-weight: 800;
+    color: #0B2922;
+}
+
+/* Make the navigation bar sticky at the top */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: 'TitanOne';
+}
+
+/* Make the footer sticky at the bottom */
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+
+
+/* Responsive styles for smaller screens (e.g., tablets and phones) */
+@media (max-width: 860px) {
+    section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    #resume,
+    #about {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Adjust the margin and padding for screens wider than 860px */
+@media screen and (min-width: 861px) {
+
+    /* Create a two-column layout for resume and about sections */
+    #resume {
+        display: inline-block;
+        width: calc(50% - 20px);
+        vertical-align: top;
+    }
+
+    #about {
+        display: inline-block;
+        width: calc(50% - 20px);
+        vertical-align: top;
+    }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Resume.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.resume-section {
+    padding-bottom: 20px;
+}
+
+.resume-section h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.resume-section h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'DMSerifDisplay', sans-serif;
+    text-align: center;
+}
+
+.resume-section h3 span{
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    font-family: 'DMSerifDisplay', sans-serif;
+    color: #ffffff; 
+    background-color: #0b2922; 
+    border: 2px solid #0b2922; 
+    padding: 0.5rem 1rem;
+    border-radius: 45px; 
+    display: inline; 
+    cursor: pointer;
+    margin: 0 auto; 
+}
+.link-to{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.resume-section ol {
+    list-style-type: disc;
+    border: solid 3px #0b2922;
+    border-radius: 15px;
+    background-color: #F3F6F4;
+    padding: 1em;
+    font-family: 'PlayfairDisplay', sans-serif;
+}
+
+.resume-section li {
+    font-size: 1.5rem;
+}
+
+
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+    border: 3px #135849 dotted;
+    background-color: #166252;
+    border-radius: 15px;
+    padding: 20px;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+        border: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Adjust the margin and padding for medium screens */
+    .resume-section {
+        padding-bottom: 0;
+    }
+}
+
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/AboutMe.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-section h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'PlayfairDisplay', sans-serif;
+}
+
+.about-section {
+    align-items: center;
+    margin: 0 5vw 0 5vw;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (max-width: 1024px) {
+
+
+    .about-section p {
+        font-size: 1.8rem;
+        /* Adjust font size for medium screens */
+    }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2rem;
+        /* Adjust font size for small screens */
+    }
+
+    .about-section p {
+        font-size: 1.6rem;
+        /* Adjust font size for small screens */
+    }
+
+    .about-section {
+        margin: 0 2vw 0 2vw;
+        /* Adjust margins for small screens */
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Welcome.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'Myfont';
+    src: url(/_next/static/media/Myfont-Regular.e4840ef5.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.welcome-section {
+    display: flex;
+    /* Display children side by side */
+    flex-direction: row;
+    /* Gets text centered */
+    align-items: center;
+    font-family: 'Myfont' ;
+
+    /* Stack items on small screens */
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+/* Style the image container */
+section .image-container {
+    flex: 1;
+    margin-right: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bitmo {
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, .7));
+}
+
+/* Style the paragraph */
+.welcome-section p {
+    flex: 1;
+    font-size: 6rem;
+    text-align: left;
+
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Contact.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-section p {
+    text-align: center;
+    font-family: 'PlayfairDisplay', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#contactform {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'PlayfairDisplay', sans-serif;
+    font-size: 2rem;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #166252;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #0b2922;
+    /* Set the button background color */
+    color: #fff;
+    /* Set the button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Change the background color on hover */
+}
+
+/* Style for error messages (optional) */
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Projects.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.projects h2 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    ;
+}
+
+.projects-container {
+    display: flex;
+    margin: 0 5vw 0 5vw;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* For smooth scrolling on iOS devices */
+}
+
+.project-card {
+    min-width: 50%;
+    scroll-snap-align: start;
+
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/ProjectCards.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.project-card {
+    border: 3px solid #166252;
+    background-color: #fff7;
+    border-radius: 25px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    font-family: 'DMSerifDisplay', sans-serif;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, .7);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #166252;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.project-card p {
+    font-size: 1.5rem;
+    color: #1f1f1d;
+    text-align: center;
+
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px #0B2922;
+    border-radius: 25px;
+    color: #1f7361;
+    background-color: #fff7e2;
+    margin-top: 8px;
+    font-size: 1.2rem;
+
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    color: #1f7361;
+    background-color: #DCD4C0;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/NavBar.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Style for the <nav> element */
+nav {
+    background-color: #0B2922;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Style for the <ul> element */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each list item (<li>) */
+li {
+    margin: 0 1rem;
+}
+
+/* Style for the <a> element (the navigation links) */
+a {
+    text-transform: capitalize;
+    color: #fff7e2;
+    transition: color 0.3s ease;
+    position: relative;
+
+    /* Add relative positioning to create a stacking context */
+
+    /* Additional styles on hover */
+    &:hover {
+        color: #DCD4C0;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+        /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    nav {
+        font-size: 1.2rem;
+        /* Further reduce the font size for very small screens */
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/Footer.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Style for the footer container */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: #1f7361;
+}
+
+/* Style for the image elements */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+
+}
