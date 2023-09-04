@@ -12,5 +12,36 @@
 
 .about-section {
     align-items: center;
-    margin: 0 5vw 0  5vw;
+    margin: 0 5vw 0 5vw;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (max-width: 1024px) {
+    .about-section h2 {
+        font-size: 2.5rem;
+        /* Adjust font size for medium screens */
+    }
+
+    .about-section p {
+        font-size: 1.8rem;
+        /* Adjust font size for medium screens */
+    }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2rem;
+        /* Adjust font size for small screens */
+    }
+
+    .about-section p {
+        font-size: 1.6rem;
+        /* Adjust font size for small screens */
+    }
+
+    .about-section {
+        margin: 0 2vw 0 2vw;
+        /* Adjust margins for small screens */
+    }
 }

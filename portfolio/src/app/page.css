@@ -1,6 +1,18 @@
+@font-face {
+    font-family: 'TitanOne';
+    src: url('./fonts/Titan_One/TitanOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Set the height of all sections to 100vh (viewport height) */
 section {
     height: 100vh;
+
+}
+
+section h2 {
+    font-family: 'TitanOne';
 }
 
 /* Make the navigation bar sticky at the top */
@@ -8,6 +20,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: 'TitanOne';
 }
 
 /* Make the footer sticky at the bottom */

@@ -7,6 +7,8 @@ export default function TypedText() {
         const options = {
             strings: ["Welcome! My name is Ashley Trollinger and this is my Full Stack Portfolio!"],
             typeSpeed: 50, // Adjust typing speed as needed
+            showCursor: false,
+            startDelay: 1000,
         };
 
         const typed = new Typed('.typed-text', options);

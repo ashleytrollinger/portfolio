@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'Myfont';
+    src: url('../fonts/Myfont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .welcome-section {
     display: flex;
     /* Display children side by side */
     flex-direction: row;
     /* Gets text centered */
     align-items: center;
+    font-family: 'Myfont' ;
 
     /* Stack items on small screens */
     @media (max-width: 768px) {
@@ -27,7 +35,7 @@ section .image-container {
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
 
 }

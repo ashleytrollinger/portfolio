@@ -5,7 +5,7 @@ export default function AboutMe() {
         <section className="about-section">
             <h2>About Me</h2>
             <p>
-                I am a passionate and dedicated software developer in the making.  My journey in software development began with a 6-month full-stack web development bootcamp at George Washington College, where I discovered my love for creating new and innovative app ideas.
+                I am a passionate and dedicated software developer in the making.  My journey in software development began with a six-month full-stack web development bootcamp at George Washington College, where I discovered my love for creating new and innovative app ideas.
             </p>
 
             <p>
