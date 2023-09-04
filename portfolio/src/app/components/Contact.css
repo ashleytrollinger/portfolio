@@ -1,0 +1,54 @@
+.contact-section {
+    text-align: center;
+  }
+
+.contact-section h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#contactform {
+    max-width: 500px;
+    /* Limit the form width */
+    margin: 0 auto;
+    /* Center the form horizontally */
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    /* Add a border to input fields */
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    /* Set the button background color */
+    color: #fff;
+    /* Set the button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Change the background color on hover */
+}
+
+/* Style for error messages (optional) */
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
