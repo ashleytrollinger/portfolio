@@ -13,7 +13,6 @@
 }
 
 .resume-section {
-    margin: 0 5vw 0 5vw;
     padding-bottom: 20px;
 }
 
@@ -84,9 +83,7 @@
         flex-direction: column;
         gap: 1rem;
         border: none;
-        /* Remove the border on smaller screens */
         padding: 0;
-        /* Remove the padding on smaller screens */
     }
 }
 
@@ -94,18 +91,7 @@
 
     /* Adjust the margin and padding for medium screens */
     .resume-section {
-        margin: 0 5vw 40px 5vw;
-        /* Increase the bottom margin to create separation */
         padding-bottom: 0;
-        /* Reset the padding to eliminate extra space */
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    /* Adjust the margin and padding for smaller screens */
-    .resume-section {
-        margin: 0 2vw 40px 2vw;
-        /* Increase the bottom margin for smaller screens */
-    }
-}

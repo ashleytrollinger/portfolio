@@ -35,7 +35,7 @@ section .image-container {
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: left;
 
 }

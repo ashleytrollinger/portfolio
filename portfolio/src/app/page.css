@@ -17,7 +17,6 @@ section h2 {
     color: #0B2922;
 }
 
-
 /* Make the navigation bar sticky at the top */
 nav {
     position: sticky;
@@ -33,22 +32,43 @@ footer {
     z-index: 100;
 }
 
-/* Responsive styles for smaller screens (e.g., tablets and phones) */
-@media (max-width: 768px) {
 
+
+/* Responsive styles for smaller screens (e.g., tablets and phones) */
+@media (max-width: 860px) {
     section {
         height: auto;
         min-height: 100vh;
     }
 
-    /* Adjust the navigation bar styles for smaller screens */
     nav {
         padding: 10px;
-
     }
-
 
     footer {
         padding: 10px;
+    }
+
+    #resume,
+    #about {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Adjust the margin and padding for screens wider than 860px */
+@media screen and (min-width: 861px) {
+
+    /* Create a two-column layout for resume and about sections */
+    #resume {
+        display: inline-block;
+        width: calc(50% - 20px);
+        vertical-align: top;
+    }
+
+    #about {
+        display: inline-block;
+        width: calc(50% - 20px);
+        vertical-align: top;
     }
 }

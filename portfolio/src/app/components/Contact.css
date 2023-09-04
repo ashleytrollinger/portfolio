@@ -19,12 +19,14 @@
     text-align: center;
     font-family: 'PlayfairDisplay', sans-serif;
     padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 #contactform {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     font-family: 'PlayfairDisplay', sans-serif;
+    font-size: 2rem;
 }
 
 /* Style for form input fields */

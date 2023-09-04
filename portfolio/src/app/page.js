@@ -24,11 +24,13 @@ export default function Home() {
         <section id='weclome'>
           <Welcome />
         </section>
-        <section id='about'>
-          <AboutMe />
-        </section>
-        <section id='resume'>
-          <Resume />
+        <section className='sidebyside'>
+          <section id='about'>
+            <AboutMe />
+          </section>
+          <section id='resume'>
+            <Resume />
+          </section>
         </section>
         <section id='projects'>
           <Projects />
