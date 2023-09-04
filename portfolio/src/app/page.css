@@ -16,3 +16,23 @@ footer {
     bottom: 0;
     z-index: 100;
 }
+
+/* Responsive styles for smaller screens (e.g., tablets and phones) */
+@media (max-width: 768px) {
+
+    section {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Adjust the navigation bar styles for smaller screens */
+    nav {
+        padding: 10px;
+
+    }
+
+
+    footer {
+        padding: 10px;
+    }
+}

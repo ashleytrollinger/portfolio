@@ -1,0 +1,42 @@
+.resume-section {
+    margin: 0 5vw 0 5vw;
+}
+
+.resume-section h2 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.resume-section h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.resume-section ol {
+    list-style-type: disc;
+}
+
+.resume-section li {
+    font-size: 1.5rem;
+}
+
+.link-to a {
+    font-size: 2.2rem;
+    color: black;
+    text-decoration: underline;
+    margin: 1rem 1rem .5rem 1rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
