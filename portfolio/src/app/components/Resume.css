@@ -1,42 +1,111 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .resume-section {
     margin: 0 5vw 0 5vw;
+    padding-bottom: 20px;
 }
 
 .resume-section h2 {
     font-weight: bold;
     font-size: 4.5rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .resume-section h5 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    font-family: 'DMSerifDisplay', sans-serif;
+    text-align: center;
+}
+
+.resume-section h3 span{
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    font-family: 'DMSerifDisplay', sans-serif;
+    color: #ffffff; 
+    background-color: #0b2922; 
+    border: 2px solid #0b2922; 
+    padding: 0.5rem 1rem;
+    border-radius: 45px; 
+    display: inline; 
+    cursor: pointer; 
+}
+
+.resume-section h3 span {
+    margin: 0 auto;
+}
+.link-to{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
 }
 
 .resume-section ol {
     list-style-type: disc;
+    border: solid 3px #0b2922;
+    border-radius: 15px;
+    background-color: #F3F6F4;
+    padding: 1em;
+    font-family: 'PlayfairDisplay', sans-serif;
 }
 
 .resume-section li {
     font-size: 1.5rem;
 }
 
-.link-to a {
-    font-size: 2.2rem;
-    color: black;
-    text-decoration: underline;
-    margin: 1rem 1rem .5rem 1rem;
-}
 
 .skills {
     display: flex;
     align-items: center;
     gap: 10rem;
     justify-content: center;
+    border: 3px #135849 dotted;
+    background-color: #166252;
+    border-radius: 15px;
+    padding: 20px;
 
 
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 1rem;
+        border: none;
+        /* Remove the border on smaller screens */
+        padding: 0;
+        /* Remove the padding on smaller screens */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Adjust the margin and padding for medium screens */
+    .resume-section {
+        margin: 0 5vw 40px 5vw;
+        /* Increase the bottom margin to create separation */
+        padding-bottom: 0;
+        /* Reset the padding to eliminate extra space */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust the margin and padding for smaller screens */
+    .resume-section {
+        margin: 0 2vw 40px 2vw;
+        /* Increase the bottom margin for smaller screens */
     }
 }

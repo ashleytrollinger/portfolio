@@ -9,11 +9,11 @@ export default function Resume() {
             </div>
             <div className='link-to'>
                 <a href={'../images/resume.pdf'} download>
-                    <h3>Download my Resume</h3>
+                    <h3><span>Download my Resume</span></h3>
                 </a>
             </div>
             <div className='skills'>
-                <div className='column-one'>
+                <div className='side-one'>
                     <h5>Front-End Proficiencies</h5>
                     <ol>
                         <li>HTML5</li>
@@ -33,7 +33,7 @@ export default function Resume() {
                     </ol>
 
                 </div>
-                <div className='column-two'>
+                <div className='side-two'>
                     <h5>Back-End Proficiencies</h5>
                     <ol>
                         <li>APIs</li>

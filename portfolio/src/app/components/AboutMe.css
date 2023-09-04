@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .about-section h2 {
     font-weight: bold;
@@ -7,8 +13,9 @@
 
 .about-section p {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
+    font-family: 'PlayfairDisplay', sans-serif;
 }
 
 .about-section {
@@ -18,10 +25,7 @@
 
 /* Media query for medium-sized screens */
 @media screen and (max-width: 1024px) {
-    .about-section h2 {
 
-        /* Adjust font size for medium screens */
-    }
 
     .about-section p {
         font-size: 1.8rem;
