@@ -34,3 +34,18 @@ a {
     }
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+        /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    nav {
+        font-size: 1.2rem;
+        /* Further reduce the font size for very small screens */
+    }
+}

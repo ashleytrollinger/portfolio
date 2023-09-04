@@ -15,14 +15,19 @@
 section .image-container {
     flex: 1;
     margin-right: 5px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
+}
+
+.bitmo {
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, .7));
 }
 
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size:3rem;
+    font-size: 3rem;
     text-align: left;
 
 }
