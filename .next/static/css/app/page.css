@@ -198,6 +198,77 @@ section .image-container {
         /* Adjust margins for small screens */
     }
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Contact.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-section p {
+    text-align: center;
+    font-family: 'PlayfairDisplay', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#contactform {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'PlayfairDisplay', sans-serif;
+    font-size: 2rem;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 6px solid #166252;
+    border-radius: 15px;
+    background-color: #F3F6F4;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #0b2922;
+    /* Set the button background color */
+    color: #fff;
+    /* Set the button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: 2rem;
+}
+
+/* Style for the submit button on hover */
+input[type="submit"]:hover {
+    transform: translateY(-5px);
+    /* Change the background color on hover */
+}
+
+/* Style for error messages (optional) */
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Resume.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
@@ -282,15 +353,16 @@ section .image-container {
     background-color: #166252;
     border-radius: 15px;
     padding: 20px;
-
+    font-size: 1.5rem; /* Increase the font size for better readability on smaller screens */
 
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 1rem;
         border: none;
-        padding: 0;
+        padding: 20px; /* Adjust the padding for spacing on smaller screens */
     }
 }
+
 
 @media screen and (max-width: 1024px) {
 
@@ -298,6 +370,88 @@ section .image-container {
     .resume-section {
         padding-bottom: 0;
     }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/NavBar.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Style for the <nav> element */
+nav {
+    background-color: #0B2922;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Style for the <ul> element */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each list item (<li>) */
+li {
+    margin: 0 1rem;
+}
+
+/* Style for the <a> element (the navigation links) */
+a {
+    text-transform: capitalize;
+    color: #fff7e2;
+    transition: color 0.3s ease;
+    position: relative;
+
+    /* Add relative positioning to create a stacking context */
+
+    /* Additional styles on hover */
+    &:hover {
+        color: #DCD4C0;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        font-size: 1.5rem;
+        /* Adjust the font size for smaller screens */
+    }
+    li {
+        margin: 0 .5rem;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    nav {
+        font-size: 1.2rem;
+        /* Further reduce the font size for very small screens */
+    }
+    li {
+        margin: 0 .35rem;
+    }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/Footer.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Style for the footer container */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: #1f7361;
+}
+
+/* Style for the image elements */
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/ProjectCards.css ***!
@@ -414,157 +568,4 @@ section .image-container {
     .project-card a {
         font-size: 0.8rem;
     }
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Contact.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.contact-section {
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 4.5rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-.contact-section p {
-    text-align: center;
-    font-family: 'PlayfairDisplay', sans-serif;
-    padding-bottom: 1rem;
-    font-size: 2rem;
-}
-
-#contactform {
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'PlayfairDisplay', sans-serif;
-    font-size: 2rem;
-}
-
-/* Style for form input fields */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 6px solid #166252;
-    border-radius: 15px;
-    background-color: #F3F6F4;
-}
-
-/* Style for the submit button */
-input[type="submit"] {
-    background-color: #0b2922;
-    /* Set the button background color */
-    color: #fff;
-    /* Set the button text color */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 35px;
-    font-size: 2rem;
-}
-
-/* Style for the submit button on hover */
-input[type="submit"]:hover {
-    transform: translateY(-5px);
-    /* Change the background color on hover */
-}
-
-/* Style for error messages (optional) */
-.error-message {
-    color: red;
-    font-size: 0.8rem;
-    margin-top: 5px;
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/NavBar.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
-/* Style for the <nav> element */
-nav {
-    background-color: #0B2922;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 3rem;
-}
-
-/* Style for the <ul> element */
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-/* Style for each list item (<li>) */
-li {
-    margin: 0 1rem;
-}
-
-/* Style for the <a> element (the navigation links) */
-a {
-    text-transform: capitalize;
-    color: #fff7e2;
-    transition: color 0.3s ease;
-    position: relative;
-
-    /* Add relative positioning to create a stacking context */
-
-    /* Additional styles on hover */
-    &:hover {
-        color: #DCD4C0;
-    }
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    nav {
-        font-size: 1.5rem;
-        /* Adjust the font size for smaller screens */
-    }
-    li {
-        margin: 0 .5rem;
-    }
-}
-
-/* Media query for even smaller screens */
-@media screen and (max-width: 576px) {
-    nav {
-        font-size: 1.2rem;
-        /* Further reduce the font size for very small screens */
-    }
-    li {
-        margin: 0 .35rem;
-    }
-}
-/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/Footer.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************/
-/* Style for the footer container */
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
-    background-color: #1f7361;
-}
-
-/* Style for the image elements */
-.logo {
-    width: 60px;
-    height: 60px;
-    margin: 0 10px;
-    max-width: 100%;
-    height: auto;
-
 }

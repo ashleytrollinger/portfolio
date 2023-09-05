@@ -38,8 +38,8 @@ export default function Home() {
         <section id='contact'>
           <Contact />
         </section>
-        <Footer />
       </div>
+      <Footer />
     </main>
   )
 }
