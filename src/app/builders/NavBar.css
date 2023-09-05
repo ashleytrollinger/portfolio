@@ -41,6 +41,9 @@ a {
         font-size: 1.5rem;
         /* Adjust the font size for smaller screens */
     }
+    li {
+        margin: 0 .5rem;
+    }
 }
 
 /* Media query for even smaller screens */
@@ -48,5 +51,8 @@ a {
     nav {
         font-size: 1.2rem;
         /* Further reduce the font size for very small screens */
+    }
+    li {
+        margin: 0 .35rem;
     }
 }

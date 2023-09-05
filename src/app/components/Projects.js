@@ -7,7 +7,7 @@ export default function Projects() {
         {
             title: 'JamSphere',
             description: 'Music sharing social media platform',
-            imageUrl: '/jamsphere.png', // You should place your project images in the public directory
+            imageUrl: '/Jamsphere.png', // You should place your project images in the public directory
             liveLink: 'https://jamsphere-ad4807320222.herokuapp.com/',
             githubLink: 'https://github.com/ashleytrollinger/JamSphere',
         },
@@ -36,14 +36,14 @@ export default function Projects() {
         // Repeat this structure for your other projects
     ];
     return (
-       <section className='projects'>
-        <h2>Projects</h2>
-        <div className="projects-container">
- 
-            {projectsData.map((project, index) => (
-                <ProjectCard key={index} {...project} />
-            ))}
-        </div>
+        <section className='projects'>
+            <h2>Projects</h2>
+            <div className="projects-container">
+
+                {projectsData.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                ))}
+            </div>
         </section>
     )
 }
