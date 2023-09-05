@@ -38,6 +38,7 @@ export default function Projects() {
     return (
         <section className='projects'>
             <h2>Projects</h2>
+            <h4>Scroll to see more ➪</h4>
             <div className="projects-container">
 
                 {projectsData.map((project, index) => (

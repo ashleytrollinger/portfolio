@@ -14,10 +14,7 @@ section {
     background-color: #1F7361;
 }
 
-section#projects {
-    padding-top: 15rem;
-}
-
+section#projects,
 section#contact {
     padding-top: 15rem;
 }
@@ -25,7 +22,7 @@ section#contact {
 section h2 {
     font-family: 'DMSerifDisplay';
     font-weight: 800;
-    color: #0B2922;
+    color: #faf778;
 }
 
 /* Make the navigation bar sticky at the top */
@@ -260,8 +257,9 @@ section .image-container {
 }
 
 .resume-section ol {
-    list-style-type: disc;
+    list-style-type: '✰' ;
     border: solid 3px #0b2922;
+    box-shadow: 0 2px 4px rgba(0,0,0, .2);
     border-radius: 15px;
     background-color: #F3F6F4;
     padding: 1em;
@@ -282,13 +280,15 @@ section .image-container {
     background-color: #166252;
     border-radius: 15px;
     padding: 20px;
-    font-size: 1.5rem; /* Increase the font size for better readability on smaller screens */
+    font-size: 1.5rem;
+    /* Increase the font size for better readability on smaller screens */
 
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 1rem;
         border: none;
-        padding: 20px; /* Adjust the padding for spacing on smaller screens */
+        padding: 20px;
+        /* Adjust the padding for spacing on smaller screens */
     }
 }
 
@@ -300,15 +300,96 @@ section .image-container {
         padding-bottom: 0;
     }
 }
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/ProjectCards.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.project-card {
+    border: 3px solid #166252;
+    background-color: #ffffff43;
+    border-radius: 25px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    font-family: 'DMSerifDisplay', sans-serif;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, .7);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #dddb62;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 30rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto;
+    border: solid black 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0, .2);
+}
+
+.project-card p {
+    font-size: 1.5rem;
+    color: #1f1f1d;
+    text-align: center;
+
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px #0B2922;
+    border-radius: 25px;
+    color: #1f7361;
+    background-color: #fff7e2;
+    margin-top: 8px;
+    font-size: 1.4rem;
+
+
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    color: #1f7361;
+    background-color: #DCD4C0;
+}
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Projects.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .projects h2 {
     font-weight: bold;
     font-size: 4.5rem;
     text-align: center;
     padding-top: 2rem;
-    ;
+}
+
+.projects h4 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'DMSerifDisplay', sans-serif;
 }
 
 .projects-container {
@@ -336,6 +417,10 @@ section .image-container {
         font-size: 2rem;
     }
 
+    .project-card h2 {
+        font-size: .35rem;
+    }
+
     .project-card img {
         max-width: 100%;
         height: auto;
@@ -348,73 +433,6 @@ section .image-container {
     .project-card a {
         font-size: 0.8rem;
     }
-}
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/ProjectCards.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-    font-family: 'DMSerifDisplay';
-    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.project-card {
-    border: 3px solid #166252;
-    background-color: #fff7;
-    border-radius: 25px;
-    padding: 16px;
-    margin: 16px;
-    width: 300px;
-    font-family: 'DMSerifDisplay', sans-serif;
-    box-shadow: 12px 12px 7px rgba(0, 0, 0, .7);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #0b2722;
-    margin-top: 6px;
-    text-align: center;
-}
-
-.project-card img {
-    width: 30rem;
-    height: 20rem;
-    display: block;
-    margin: 0 auto;
-
-}
-
-.project-card p {
-    font-size: 1.5rem;
-    color: #1f1f1d;
-    text-align: center;
-
-}
-
-.project-card a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    border: solid 2px #0B2922;
-    border-radius: 25px;
-    color: #1f7361;
-    background-color: #fff7e2;
-    margin-top: 8px;
-    font-size: 1.2rem;
-    
-
-}
-
-.project-card a:hover {
-    text-decoration: underline;
-    color: #1f7361;
-    background-color: #DCD4C0;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Contact.css ***!
@@ -496,6 +514,7 @@ nav {
     padding: 1rem 0;
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 /* Style for the <ul> element */
@@ -515,7 +534,7 @@ li {
 /* Style for the <a> element (the navigation links) */
 a {
     text-transform: capitalize;
-    color: #fff7e2;
+    color: #FAF778;
     transition: color 0.3s ease;
     position: relative;
 

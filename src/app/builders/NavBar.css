@@ -4,6 +4,7 @@ nav {
     padding: 1rem 0;
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 /* Style for the <ul> element */
@@ -23,7 +24,7 @@ li {
 /* Style for the <a> element (the navigation links) */
 a {
     text-transform: capitalize;
-    color: #fff7e2;
+    color: #FAF778;
     transition: color 0.3s ease;
     position: relative;
 
