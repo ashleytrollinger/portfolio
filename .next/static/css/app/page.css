@@ -96,7 +96,7 @@ footer {
     flex-direction: row;
     /* Gets text centered */
     align-items: center;
-    font-family: 'Myfont' ;
+    font-family: 'Myfont';
 
     /* Stack items on small screens */
     @media (max-width: 768px) {
@@ -121,31 +121,40 @@ section .image-container {
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size: 6rem;
+    font-size: 6vw;
     text-align: left;
 
 }
 
+
+
+
 @media (max-width: 768px) {
     .welcome-section p {
         flex: 1;
-        font-size: 2rem;
+        font-size: 8vw;
         text-align: center;
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     .bitmo {
 
         margin-left: 0;
     }
 }
-
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/AboutMe.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-family: 'Libre';
+    src: url(/_next/static/media/LibreBaskerville-Regular.ea362fb5.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -154,36 +163,29 @@ section .image-container {
     font-weight: bold;
     font-size: 4.5rem;
     text-align: center;
+    font-family: 'League', sans-serif;
 }
 
 .about-section p {
-    font-size: 1.75rem;
+    font-size: 1.5vw;
     text-align: center;
     margin-top: 20px;
-    font-family: 'PlayfairDisplay', sans-serif;
+    font-family: 'Libre', sans-serif;
 }
 
 .about-section {
     align-items: center;
     margin: 0 5vw 0 5vw;
 }
-
-/* Media query for medium-sized screens */
 @media screen and (max-width: 1024px) {
-
-
     .about-section p {
-        font-size: 1.8rem;
-        /* Adjust font size for medium screens */
+        font-size: 2vw;
     }
 }
 
+
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
-    .about-section h2 {
-        font-size: 2rem;
-        /* Adjust font size for small screens */
-    }
 
     .about-section p {
         font-size: 1.6rem;
@@ -199,18 +201,25 @@ section .image-container {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Resume.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-family: 'LibreI';
+    src: url(/_next/static/media/LibreBaskerville-Italic.d4e4df94.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-family: 'Libre';
+    src: url(/_next/static/media/LibreBaskerville-Regular.ea362fb5.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .resume-section {
     padding-bottom: 20px;
@@ -221,10 +230,11 @@ section .image-container {
     font-size: 4.5rem;
     text-align: center;
     margin-bottom: 1rem;
+    font-family: 'League', sans-serif;
 }
 
 .resume-section h5 {
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     font-weight: bold;
     font-family: 'DMSerifDisplay', sans-serif;
     text-align: center;
@@ -242,6 +252,7 @@ section .image-container {
     border-radius: 45px;
     display: inline;
     cursor: pointer;
+    font-family: 'LibreI',sans-serif;
     margin: 0 auto;
 }
 
@@ -257,33 +268,34 @@ section .image-container {
 }
 
 .resume-section ol {
-    list-style-type: '✰' ;
+    list-style-type: '✰';
     border: solid 3px #0b2922;
-    box-shadow: 0 2px 4px rgba(0,0,0, .2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     border-radius: 15px;
     background-color: #F3F6F4;
-    padding: 1em;
-    font-family: 'PlayfairDisplay', sans-serif;
+    padding: 1vw;
+    font-family: 'Libre', sans-serif;
 }
 
 .resume-section li {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 
 .skills {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 2vw;
     justify-content: center;
     border: 3px #135849 dotted;
     background-color: #166252;
     border-radius: 15px;
     padding: 20px;
     font-size: 1.5rem;
-    /* Increase the font size for better readability on smaller screens */
+    overflow: hidden;
+    /* Add this line to ensure content stays contained */
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         gap: 1rem;
         border: none;
@@ -292,6 +304,16 @@ section .image-container {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .resume-section li {
+        font-size: 3vw;
+    }
+
+    .resume-section h5 {
+        font-size: 4.5vw;
+    }
+
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -299,13 +321,17 @@ section .image-container {
     .resume-section {
         padding-bottom: 0;
     }
+
+    .skills {
+        gap: 3rem;
+    }
 }
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/ProjectCards.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -317,7 +343,6 @@ section .image-container {
     padding: 16px;
     margin: 16px;
     width: 300px;
-    font-family: 'DMSerifDisplay', sans-serif;
     box-shadow: 12px 12px 7px rgba(0, 0, 0, .7);
 }
 
@@ -331,6 +356,7 @@ section .image-container {
     color: #dddb62;
     margin-top: 6px;
     text-align: center;
+    font-family: 'League', sans-serif;
 }
 
 .project-card img {
@@ -346,6 +372,7 @@ section .image-container {
     font-size: 1.5rem;
     color: #1f1f1d;
     text-align: center;
+    padding-top: 1rem;
 
 }
 
@@ -359,7 +386,7 @@ section .image-container {
     background-color: #fff7e2;
     margin-top: 8px;
     font-size: 1.4rem;
-
+    font-family: 'League', sans-serif;
 
 }
 
@@ -372,8 +399,20 @@ section .image-container {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Projects.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url(/_next/static/media/DMSerifDisplay-Regular.2ac022b0.ttf) format('truetype');
+    font-family: 'LibreI';
+    src: url(/_next/static/media/LibreBaskerville-Italic.d4e4df94.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Libre';
+    src: url(/_next/static/media/LibreBaskerville-Regular.ea362fb5.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -383,13 +422,14 @@ section .image-container {
     font-size: 4.5rem;
     text-align: center;
     padding-top: 2rem;
+    font-family: 'League', sans-serif;
 }
 
 .projects h4 {
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    font-family: 'DMSerifDisplay', sans-serif;
+    font-family: 'LibreI', sans-serif;
 }
 
 .projects-container {
@@ -404,6 +444,7 @@ section .image-container {
 .project-card {
     min-width: 50%;
     scroll-snap-align: start;
+    font-family: 'Libre',sans-serif;
 
 }
 
@@ -438,8 +479,20 @@ section .image-container {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/components/Contact.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url(/_next/static/media/PlayfairDisplay-VariableFont_wght.c0f850b7.ttf) format('truetype');
+    font-family: 'Libre';
+    src: url(/_next/static/media/LibreBaskerville-Regular.ea362fb5.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreI';
+    src: url(/_next/static/media/LibreBaskerville-Italic.d4e4df94.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -452,20 +505,21 @@ section .image-container {
     font-size: 4.5rem;
     text-align: center;
     font-weight: bold;
+    font-family: 'League', sans-serif;
 }
 
 .contact-section p {
     text-align: center;
-    font-family: 'PlayfairDisplay', sans-serif;
+    font-family: 'Libre', sans-serif;
     padding-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.2vw;
 }
 
 #contactform {
     max-width: 600px;
     margin: 0 auto;
-    font-family: 'PlayfairDisplay', sans-serif;
-    font-size: 2rem;
+    font-family: 'Libre', sans-serif;
+    font-size: 2vw;
 }
 
 /* Style for form input fields */
@@ -491,6 +545,7 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 35px;
     font-size: 2rem;
+    font-family: 'LibreI',sans-serif;
 }
 
 /* Style for the submit button on hover */
@@ -508,13 +563,20 @@ input[type="submit"]:hover {
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/app/builders/NavBar.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'League';
+    src: url(/_next/static/media/LeagueSpartan-VariableFont_wght.d102c4bc.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Style for the <nav> element */
 nav {
     background-color: #0B2922;
     padding: 1rem 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: bold;
+ 
 }
 
 /* Style for the <ul> element */
@@ -534,15 +596,16 @@ li {
 /* Style for the <a> element (the navigation links) */
 a {
     text-transform: capitalize;
-    color: #FAF778;
+    color: #F3F6F4;
     transition: color 0.3s ease;
     position: relative;
+    font-family: 'League', sans-serif;
 
     /* Add relative positioning to create a stacking context */
 
     /* Additional styles on hover */
     &:hover {
-        color: #DCD4C0;
+        color: #FAF778;
     }
 }
 
@@ -552,6 +615,7 @@ a {
         font-size: 1.5rem;
         /* Adjust the font size for smaller screens */
     }
+
     li {
         margin: 0 .5rem;
     }
@@ -563,6 +627,7 @@ a {
         font-size: 1.2rem;
         /* Further reduce the font size for very small screens */
     }
+
     li {
         margin: 0 .35rem;
     }
@@ -577,6 +642,7 @@ a {
     align-items: center;
     padding-bottom: 1rem;
     background-color: #1f7361;
+    margin-top: 0;
 }
 
 /* Style for the image elements */
@@ -588,3 +654,11 @@ a {
     height: auto;
 
 }
+@media (max-width: 768px) {
+    .logo {
+        width: 40px; /* Adjust the width for smaller screens */
+        height: 40px; /* Adjust the height for smaller screens */
+        margin: 0 5px; /* Adjust the margin for smaller screens */
+    }
+}
+

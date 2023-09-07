@@ -8,7 +8,7 @@ export default function Resume() {
                 <h2>My Resume</h2>
             </div>
             <div className='link-to'>
-                <a href={'../../../public/Official-Resume.png'} download>
+                <a href={'../../../public/OfficialResume.pdf'} download>
                     <h3><span>Download my Resume</span></h3>
                 </a>
             </div>

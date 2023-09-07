@@ -1,16 +1,23 @@
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-family: 'LibreI';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-family: 'Libre';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .resume-section {
     padding-bottom: 20px;
@@ -21,10 +28,11 @@
     font-size: 4.5rem;
     text-align: center;
     margin-bottom: 1rem;
+    font-family: 'League', sans-serif;
 }
 
 .resume-section h5 {
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     font-weight: bold;
     font-family: 'DMSerifDisplay', sans-serif;
     text-align: center;
@@ -42,6 +50,7 @@
     border-radius: 45px;
     display: inline;
     cursor: pointer;
+    font-family: 'LibreI',sans-serif;
 }
 
 .resume-section h3 span {
@@ -60,33 +69,34 @@
 }
 
 .resume-section ol {
-    list-style-type: '✰' ;
+    list-style-type: '✰';
     border: solid 3px #0b2922;
-    box-shadow: 0 2px 4px rgba(0,0,0, .2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     border-radius: 15px;
     background-color: #F3F6F4;
-    padding: 1em;
-    font-family: 'PlayfairDisplay', sans-serif;
+    padding: 1vw;
+    font-family: 'Libre', sans-serif;
 }
 
 .resume-section li {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 
 .skills {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    gap: 2vw;
     justify-content: center;
     border: 3px #135849 dotted;
     background-color: #166252;
     border-radius: 15px;
     padding: 20px;
     font-size: 1.5rem;
-    /* Increase the font size for better readability on smaller screens */
+    overflow: hidden;
+    /* Add this line to ensure content stays contained */
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction: column;
         gap: 1rem;
         border: none;
@@ -95,11 +105,25 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .resume-section li {
+        font-size: 3vw;
+    }
+
+    .resume-section h5 {
+        font-size: 4.5vw;
+    }
+
+}
 
 @media screen and (max-width: 1024px) {
 
     /* Adjust the margin and padding for medium screens */
     .resume-section {
         padding-bottom: 0;
+    }
+
+    .skills {
+        gap: 3rem;
     }
 }

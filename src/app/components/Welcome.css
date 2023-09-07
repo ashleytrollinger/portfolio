@@ -11,7 +11,7 @@
     flex-direction: row;
     /* Gets text centered */
     align-items: center;
-    font-family: 'Myfont' ;
+    font-family: 'Myfont';
 
     /* Stack items on small screens */
     @media (max-width: 768px) {
@@ -36,19 +36,23 @@ section .image-container {
 /* Style the paragraph */
 .welcome-section p {
     flex: 1;
-    font-size: 6rem;
+    font-size: 6vw;
     text-align: left;
 
 }
 
+
+
+
 @media (max-width: 768px) {
     .welcome-section p {
         flex: 1;
-        font-size: 2rem;
+        font-size: 8vw;
         text-align: center;
         margin-right: 1rem;
         margin-left: 1rem;
     }
+
     .bitmo {
 
         margin-left: 0;

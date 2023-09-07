@@ -1,6 +1,18 @@
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-family: 'LibreI';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Libre';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,13 +22,14 @@
     font-size: 4.5rem;
     text-align: center;
     padding-top: 2rem;
+    font-family: 'League', sans-serif;
 }
 
 .projects h4 {
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    font-family: 'DMSerifDisplay', sans-serif;
+    font-family: 'LibreI', sans-serif;
 }
 
 .projects-container {
@@ -31,6 +44,7 @@
 .project-card {
     min-width: 50%;
     scroll-snap-align: start;
+    font-family: 'Libre',sans-serif;
 
 }
 

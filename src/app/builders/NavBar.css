@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Style for the <nav> element */
 nav {
     background-color: #0B2922;
     padding: 1rem 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: bold;
+ 
 }
 
 /* Style for the <ul> element */
@@ -24,15 +31,16 @@ li {
 /* Style for the <a> element (the navigation links) */
 a {
     text-transform: capitalize;
-    color: #FAF778;
+    color: #F3F6F4;
     transition: color 0.3s ease;
     position: relative;
+    font-family: 'League', sans-serif;
 
     /* Add relative positioning to create a stacking context */
 
     /* Additional styles on hover */
     &:hover {
-        color: #DCD4C0;
+        color: #FAF778;
     }
 }
 
@@ -42,6 +50,7 @@ a {
         font-size: 1.5rem;
         /* Adjust the font size for smaller screens */
     }
+
     li {
         margin: 0 .5rem;
     }
@@ -53,6 +62,7 @@ a {
         font-size: 1.2rem;
         /* Further reduce the font size for very small screens */
     }
+
     li {
         margin: 0 .35rem;
     }

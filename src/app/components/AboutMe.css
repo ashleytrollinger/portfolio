@@ -1,6 +1,12 @@
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Libre';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,36 +15,29 @@
     font-weight: bold;
     font-size: 4.5rem;
     text-align: center;
+    font-family: 'League', sans-serif;
 }
 
 .about-section p {
-    font-size: 1.75rem;
+    font-size: 1.5vw;
     text-align: center;
     margin-top: 20px;
-    font-family: 'PlayfairDisplay', sans-serif;
+    font-family: 'Libre', sans-serif;
 }
 
 .about-section {
     align-items: center;
     margin: 0 5vw 0 5vw;
 }
-
-/* Media query for medium-sized screens */
 @media screen and (max-width: 1024px) {
-
-
     .about-section p {
-        font-size: 1.8rem;
-        /* Adjust font size for medium screens */
+        font-size: 2vw;
     }
 }
 
+
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
-    .about-section h2 {
-        font-size: 2rem;
-        /* Adjust font size for small screens */
-    }
 
     .about-section p {
         font-size: 1.6rem;

@@ -1,6 +1,18 @@
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-family: 'Libre';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreI';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,20 +25,21 @@
     font-size: 4.5rem;
     text-align: center;
     font-weight: bold;
+    font-family: 'League', sans-serif;
 }
 
 .contact-section p {
     text-align: center;
-    font-family: 'PlayfairDisplay', sans-serif;
+    font-family: 'Libre', sans-serif;
     padding-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.2vw;
 }
 
 #contactform {
     max-width: 600px;
     margin: 0 auto;
-    font-family: 'PlayfairDisplay', sans-serif;
-    font-size: 2rem;
+    font-family: 'Libre', sans-serif;
+    font-size: 2vw;
 }
 
 /* Style for form input fields */
@@ -52,6 +65,7 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 35px;
     font-size: 2rem;
+    font-family: 'LibreI',sans-serif;
 }
 
 /* Style for the submit button on hover */

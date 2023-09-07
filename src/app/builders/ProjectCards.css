@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'DMSerifDisplay';
-    src: url('../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+    font-family: 'League';
+    src: url('../fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,7 +12,6 @@
     padding: 16px;
     margin: 16px;
     width: 300px;
-    font-family: 'DMSerifDisplay', sans-serif;
     box-shadow: 12px 12px 7px rgba(0, 0, 0, .7);
 }
 
@@ -26,6 +25,7 @@
     color: #dddb62;
     margin-top: 6px;
     text-align: center;
+    font-family: 'League', sans-serif;
 }
 
 .project-card img {
@@ -41,6 +41,7 @@
     font-size: 1.5rem;
     color: #1f1f1d;
     text-align: center;
+    padding-top: 1rem;
 
 }
 
@@ -54,7 +55,7 @@
     background-color: #fff7e2;
     margin-top: 8px;
     font-size: 1.4rem;
-
+    font-family: 'League', sans-serif;
 
 }
 
