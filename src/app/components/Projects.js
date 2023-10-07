@@ -26,6 +26,13 @@ export default function Projects() {
             githubLink: 'https://github.com/ashleytrollinger/react-portfolio',
         },
         {
+            title: 'Game Center',
+            description: 'Working with different APIs to make a fun online game center.',
+            imageUrl: '/GameCenter.png', // You should place your project images in the public directory
+            liveLink: 'https://game-center-ruby.vercel.app/',
+            githubLink: 'https://github.com/ashleytrollinger/Game-Center',
+        },
+        {
             title: 'Weather Dashboard',
             description: 'Works with OpenWeatherMap to create a 7 day weather forcaster',
             imageUrl: '/weather.png', // You should place your project images in the public directory
