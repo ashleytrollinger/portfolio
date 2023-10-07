@@ -6,7 +6,7 @@ export default function Projects() {
     const projectsData = [
         {
             title: 'JamSphere',
-            description: 'Music sharing social media platform',
+            description: 'Music sharing social media platform; Full-Stack Web Application',
             imageUrl: '/Jamsphere.png', // You should place your project images in the public directory
             liveLink: 'https://jamsphere-ad4807320222.herokuapp.com/',
             githubLink: 'https://github.com/ashleytrollinger/JamSphere',
